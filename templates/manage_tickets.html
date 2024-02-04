@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block bootstrap %} 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+{% endblock bootstrap %}
+
+{% block content %}<br><br>
+<h2>{{request.user.first_name}} Open Tickets: </h2><br>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Full Name</th>
+      <th scope="col">Mobile Number</th>
+      <th scope="col">Username</th>
+      <th scope="col">Subject</th>
+      <th scope="col">Issue</th>
+      <th scope="col">Status</th>
+      <th scope="col">Reply</th>
+      <th scope="col">Created</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ticket in tickets %}
+    <tr>
+      <td>{{ticket.id}}</td>
+      <td>{{ticket.user.first_name}}</td>
+      <td>{{ticket.user.last_name}}</td>
+      <td>{{ticket.user.username}}</td>
+      <td>{{ticket.subject}}</td>
+      <td>{{ticket.issue}}</td>
+      <td>{% if ticket.status == True %} Settled {% else %} Pending {% endif %}</td>
+      <td> - </td>
+      <td>{{ticket.created}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock content %}

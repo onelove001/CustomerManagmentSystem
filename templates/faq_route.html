@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} LiveChat {% endblock %}
+
+{% block content %}
+<div class="banner banner-- js-carousel">
+<div class="banner__slide banner__slide--picture" style="background:url('../../../static/wp-content/uploads/2020/06/1223350-PG-re-opening-promo-hero-banner_v31_Page_1-1920x822.png');">
+<div class="banner__container">
+<span class="banner__surtitle"></span>
+<span class="banner__title">Live Chat</span>
+</div>
+</div>
+</div>
+<div class="page-wrap">
+
+<div class="text-cols">
+<div class="text-cols__container text-cols__container--title">
+<h2 class="text-cols__title"> </h2>
+<div class="text-cols__col text-cols__col--main">
+<br>
+<strong>Chat To Us</strong><br><br>
+    <form action="" class="form__form" method="POST">
+        {% csrf_token %}
+        <div class="form__field form__field--text ">
+            <label class="form__label" for="full_name">Chat</label>
+            <textarea class="" id="full_name" name="chat" type="text" required style="height:200px; width:700px;"></textarea>
+        </div>
+        <button class="button button--border button--small form__submit" type="submit">Send</button>
+    </form>
+<br>
+<br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+<br>
+<br>
+for more enquiries, reach on our contact page
+</div>
+</div>
+</div>
+
+</div>
+{% endblock %}

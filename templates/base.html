@@ -1,0 +1,185 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en-GB" itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#"> 
+	
+<head>
+
+    <title>CMS {% block title %} {% endblock %} </title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'wp-content/themes/places-theme/assets/favicons/apple-touch-icon.png' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'wp-content/themes/places-theme/assets/favicons/favicon.ico' %}"/>
+    {% block bootstrap %} {% endblock %}
+
+            
+    <!-- Google Tag Manager for WordPress by DuracellTomi -->
+    <script data-cfasync="false" type="text/javascript">//<![CDATA[
+        var gtm4wp_datalayer_name = "dataLayer";
+        var dataLayer = dataLayer || [];//]]>	
+    </script>
+
+    <!-- End Google Tag Manager for WordPress by DuracellTomi -->
+    <!-- All in One SEO Pack 2.4.4.1 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+    <meta name="description"  content="With 6 gyms to choose from, we are MADE TO MOVE YOU. As soon as you step through our doors, you&#039;re going to get helpful advice, a smile and the encouragement you need to reach your goals." />
+    <link rel="canonical" href="." />
+    <meta property="og:title" content="Places Gym" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://placesgym.org/" />
+    <meta property="og:image" content="https://placesgym.org/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
+    <meta property="og:site_name" content="Places Gym" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Places Gym" />
+    <meta name="twitter:image" content="{% static 'wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png' %}" />
+    <meta itemprop="image" content="{% static 'wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png' %}" />
+    <script type="text/javascript" >
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-51880606-1', { 'cookieDomain': 'placesgym.org' } );
+        // Plugins
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+    <script async src="../www.google-analytics.com/analytics.js"></script>
+    <link rel='dns-prefetch' href='../player.vimeo.com/index.html' />
+    <link rel='dns-prefetch' href='../s.w.org/index.html' />
+    <script type="text/javascript">
+        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/placesgym.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+        !function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <link rel='stylesheet' id='contact-form-7-css'  href="{% static 'wp-content/plugins/contact-form-7/includes/css/styles58e0.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' id='lhapi-css'  href="{% static 'wp-content/plugins/leisure-hub-api/public/css/lhapi-public8a54.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' id='responsive-lightbox-swipebox-css'  href="{% static 'wp-content/plugins/responsive-lightbox/assets/swipebox/css/swipebox.min3c94.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' id='site-styles-css'  href="{% static 'wp-content/themes/places-theme/dist/css/mainf269.css' %}" type='text/css' media='all' />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  -->
+    <script type='text/javascript' src="{% static 'wp-includes/js/jquery/jqueryb8ff.js' %}"></script>
+    <script type='text/javascript' src="{% static 'wp-includes/js/jquery/jquery-migrate.min330a.js' %}"></script>
+    <script type='text/javascript' src="{% static 'wp-content/plugins/leisure-hub-api/public/js/lhapi-public8a54.js' %}"></script>
+    <script type='text/javascript' src="{% static 'wp-content/plugins/responsive-lightbox/assets/swipebox/js/jquery.swipebox.min3c94.js' %}"></script>
+    <script type='text/javascript' src="{% static 'wp-content/plugins/responsive-lightbox/assets/infinitescroll/infinite-scroll.pkgd.min5010.js' %}"></script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activeGalleries":"1","animation":"1","hideCloseButtonOnMobile":"0","removeBarsOnMobile":"0","hideBars":"1","hideBarsDelay":"5000","videoMaxWidth":"1080","useSVG":"1","loopAtEnd":"0","woocommerce_gallery":"0","ajaxurl":"https:\/\/placesgym.org\/wp-admin\/admin-ajax.php","nonce":"31c7e25975"};
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src="{% static 'wp-content/plugins/responsive-lightbox/js/front3c94.js?ver=2.1.0' %}"></script>
+    <script type='text/javascript' src="{% static 'wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-trackerc245.js' %}"></script>
+    <script type='text/javascript' src="{% static 'wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-social-trackerc245.js' %}"></script>
+    <script type='text/javascript' src="{% static 'wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-youtubec245.js' %}"></script>
+    <!-- <script type='text/javascript' src='../player.vimeo.com/api/player5152.js?ver=1.0'></script> -->
+    <script type='text/javascript' src="{% static 'wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-vimeoc245.js' %}"></script>
+    <script type='text/javascript' src="{% static 'wp-content/plugins/duracelltomi-google-tag-manager/js/analytics-talk-content-trackingc245.js' %}"></script>
+    <script type='text/javascript' src="{% static 'wp-content/themes/places-theme/assets/libs/modernizr5010.js' %}"></script>
+    <!-- <link rel='https://api.w.org/' href='wp-json/index.html' /> -->
+    <link rel='shortlink' href='.' />
+    <link rel="alternate" type="application/json+oembed" href="{% static 'wp-json/oembed/1.0/embedc989.json' %}" />
+    <link rel="alternate" type="text/xml+oembed" href="{% static 'wp-json/oembed/1.0/embed0aa5' %}" />
+    <!-- Google Tag Manager for WordPress by DuracellTomi -->
+
+    <script data-cfasync="false" type="text/javascript">//<![CDATA[
+
+        var gtm4wp_scrollerscript_debugmode         = false;
+        var gtm4wp_scrollerscript_callbacktime      = 100;
+        var gtm4wp_scrollerscript_readerlocation    = 10;
+        var gtm4wp_scrollerscript_contentelementid  = "content";
+        var gtm4wp_scrollerscript_scannertime       = 10;
+        dataLayer.push({"pageTitle":"","pagePostType":"frontpage","pagePostType2":"single-page","pagePostAuthorID":1,"pagePostAuthor":"ahoy","pagePostDate":"February 2, 2018","pagePostDateYear":"2018","pagePostDateMonth":"02","pagePostDateDay":"02","browserName":"","browserVersion":"","browserEngineName":"","browserEngineVersion":"","osName":"Windows","osVersion":"4.1","deviceType":"desktop","deviceManufacturer":"","deviceModel":"","postCountOnPage":1,"postCountTotal":1,"postID":5,"postFormat":"standard","gtm.whitelist":["d","jsm","c","k","e","j","v","r","f","u","v"],"gtm.blacklist":[]});//]]>
+    </script>
+    <script data-cfasync="false">//<![CDATA[
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MRFG325');//]]>
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- End Google Tag Manager for WordPress by DuracellTomi --><meta name="facebook-domain-verification" content="wh3kpme96y9fsnkp918s8s0ns2gqut" />
+    <!-- Facebook Pixel Code - not cross-domain pixel -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    '../connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2197808113788274');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none" 
+        src="https://www.facebook.com/tr?ev=PageView&amp;id=2197808113788274&amp;noscript=1&amp;redirect=0"/>
+    </noscript>
+    <!-- End Facebook Pixel Code - not cross-domain pixel -->
+    <!-- Facebook Pixel Code -->
+    <script type='text/javascript'>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','../connect.facebook.net/en_US/fbevents.js');
+    </script>
+    <!-- End Facebook Pixel Code -->
+    <script type='text/javascript'>
+    fbq('init', '3582984238395950', [], {
+        "agent": "wordpress-4.9.8-1.7.25"
+    });
+    </script><script type='text/javascript'>
+    fbq('track', 'PageView', []);
+    </script>
+    <!-- Facebook Pixel Code -->
+    <noscript>
+    <img height="1" width="1" style="display:none" alt="fbpx"
+    src="../www.facebook.com/trb0fc?id=3582984238395950&amp;ev=PageView&amp;noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+
+<body class="home page-template-default page page-id-5 page-parent ">
+    <br style="display:none;">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRFG325" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <div class="site-wrap">
+
+        {% include 'header.html' %}
+
+        {% block content %}
+
+        {% endblock %}
+    
+        {% include 'footer.html' %}
+
+    </div>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/placesgym.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src="{% static 'wp-content/plugins/contact-form-7/includes/js/scripts58e0.js' %}"></script>
+<script type='text/javascript' src="{% static 'wp-content/plugins/better-wp-security/core/modules/wordpress-tweaks/js/blankshield/blankshield.min15a2.js' %}"></script>
+<script type='text/javascript' src="{% static 'wp-content/plugins/better-wp-security/core/modules/wordpress-tweaks/js/block-tabnapping.min15a2.js' %}"></script>
+<script type='text/javascript' src="{% static 'wp-content/themes/places-theme/assets/libs/jqueryvalidate/jquery.validate5010.js' %}"></script>
+<script type='text/javascript' src="{% static 'wp-content/themes/places-theme/assets/libs/lightslider/js/lightslider5010.js' %}"></script>
+<script type='text/javascript' src="{% static 'wp-content/themes/places-theme/assets/libs/slabText/js/jquery.slabtext5010.js' %}"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WP = {"template":"https:\/\/placesgym.org\/wp-content\/themes\/places-theme","assets":"https:\/\/placesgym.org\/wp-content\/themes\/places-theme\/assets\/","site":"https:\/\/placesgym.org","ajax":"https:\/\/placesgym.org\/wp-admin\/admin-ajax.php","nonce":"a388a383ba","map":{"marker":"https:\/\/placesgym.org\/wp-content\/themes\/places-theme\/assets\/images\/icon--marker.png","locations":[{"address":"Shrubhill, Edinburgh, UK","lat":"55.961868","lng":"-3.179789000000028"},{"address":"Station Road, Hinckley, UK","lat":"52.53797509999999","lng":"-1.372748799999954"},{"address":"Places Gym Sheffield, Crystal Peaks Retail Park, Sheffield, UK, S20 7JJ","lat":"53.3450819","lng":"-1.3528953"},{"address":"18 Craven Drive, Bamber Bridge, Preston, UK","lat":"53.7200763","lng":"-2.6734030000000075"}]}};
+/* ]]> */
+</script>
+
+<script type='text/javascript' src="{% static 'wp-content/themes/places-theme/dist/js/main5010.js' %}"></script>
+<script type='text/javascript' src="{% static 'wp-includes/js/wp-embed.min5010.js' %}"></script>
+
+
+</body>
+
+</html>
